@@ -1,0 +1,11 @@
+th{
+  border: solid 1px white;
+}
+.all{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  left: 50px;
+  border: solid 5px white;
+}
