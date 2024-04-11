@@ -1,6 +1,6 @@
 
 import './App.css'
-
+import Search from './Search';
 function App() {
 
   
@@ -28,15 +28,16 @@ function App() {
 
     return (
         <div className='all'>
+          <Search/>
           <h2>Our products : </h2>
+          <table className="table table-hover">
           {products.map((product) => (
-            <table className="table table-hover" key={product.id}>
-              <tr>
+              <tr key={product.id}>
               <th>{product.name}</th>
               <th>{product.price}</th>
               </tr>
-         </table>
          ))}
+         </table>
         </div> 
       )
 
